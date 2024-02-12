@@ -1,0 +1,38 @@
+{"dilemmas":[
+    {
+        "id": 1,
+        "optionOne": "Taco",
+        "optionTwo": "Pizza",
+        "categories": [1]
+    },
+    {
+        "id": 2,
+        "optionOne": "Wireless keyboard",
+        "optionTwo": "Wireless mouse",
+        "categories": [2]
+    },
+    {
+        "id": 3,
+        "optionOne": "Three arms",
+        "optionTwo": "Three legs",
+        "categories": [3]
+    },
+    {
+        "id": 4,
+        "optionOne": "Ice cream",
+        "optionTwo": "Cake",
+        "categories": [1]
+    },
+    {
+        "id": 5,
+        "optionOne": "Get 100 dollars for every lost hour of sleep",
+        "optionTwo": "Get 100 dollars for every good night's sleep",
+        "categories": [3]
+    },
+    {
+        "id": 5,
+        "optionOne": "Have ChatGPT decide everything you eat",
+        "optionTwo": "Have your mother decide everything you eat",
+        "categories": [1, 2]
+    }
+]}
