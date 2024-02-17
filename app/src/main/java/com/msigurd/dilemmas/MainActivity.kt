@@ -11,11 +11,14 @@ import com.msigurd.dilemmas.model.Category
 import com.msigurd.dilemmas.model.Dilemma
 import com.msigurd.dilemmas.ui.DilemmasApp
 import com.msigurd.dilemmas.ui.theme.DilemmasTheme
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
+
+        installSplashScreen()
+        enableEdgeToEdge()
 
         val categoriesList = Category.createCategoriesList(res = resources)
         val dilemmasList = Dilemma.createDilemmasList(res = resources)
