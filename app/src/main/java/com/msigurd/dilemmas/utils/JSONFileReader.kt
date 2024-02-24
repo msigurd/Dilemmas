@@ -1,6 +1,8 @@
 package com.msigurd.dilemmas.utils
 
 import android.content.res.Resources
+import androidx.compose.ui.text.intl.Locale
+import org.json.JSONObject
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
@@ -20,4 +22,14 @@ fun readObjectsDataFromJSONFile(res: Resources, resourceFile: Int): String {
         e.printStackTrace()
     }
     return entireFile.toString()
+}
+
+fun getTranslatedString(jsonObject: JSONObject, key: String): String {
+    val jsonOption = jsonObject.optJSONObject(key)
+
+    return if (Locale.current.language == "nb") {
+        jsonOption?.optString("nb") ?: ""
+    } else {
+        jsonOption?.optString("en") ?: ""
+    }
 }

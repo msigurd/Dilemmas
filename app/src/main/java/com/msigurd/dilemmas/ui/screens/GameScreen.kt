@@ -21,7 +21,9 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.msigurd.dilemmas.R
 
 @Composable
 fun GameScreen(
@@ -90,7 +92,7 @@ fun Content(
                 .fillMaxHeight()
                 .wrapContentSize()
     ) {
-        Text("or")
+        Text(stringResource(R.string.game_or))
     }
     Column{
         DilemmaCard(

@@ -46,13 +46,6 @@ fun SelectionScreen(
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
         ) {
-            item {
-                CategoryBox(
-                    Category(0, "All"),
-                    viewModel,
-                    navigateToGameScreen
-                )
-            }
             items(sortedCategories) { category ->
                 CategoryBox(
                     category, viewModel, navigateToGameScreen
@@ -86,7 +79,7 @@ fun CategoryBox(
         ) {
             Row{
                 Icon(
-                    imageVector = getCategoryImage(category.name),
+                    imageVector = getCategoryImage(category.id),
                     contentDescription = category.name,
                     modifier = modifier
                         .padding(end = 20.dp)
@@ -101,12 +94,12 @@ fun CategoryBox(
     }
 }
 
-fun getCategoryImage(categoryName: String): ImageVector {
-    return when (categoryName) {
-        "All" -> Icons.Filled.Star
-        "Food" -> Icons.Filled.Fastfood
-        "Technology" -> Icons.Filled.Computer
-        "Body" -> Icons.Filled.AccessibilityNew
+fun getCategoryImage(categoryId: Int): ImageVector {
+    return when (categoryId) {
+        0 -> Icons.Filled.Star                  // All
+        1 -> Icons.Filled.Fastfood              // Food
+        2 -> Icons.Filled.Computer              // Technology
+        3 -> Icons.Filled.AccessibilityNew      // Body
         else -> Icons.Filled.Android
     }
 }

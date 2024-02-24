@@ -1,38 +1,74 @@
 {"dilemmas":[
     {
         "id": 1,
-        "optionOne": "Taco",
-        "optionTwo": "Pizza",
+        "optionOne": {
+            "en": "Taco",
+            "nb": "Taco"
+        },
+        "optionTwo": {
+            "en": "Pizza",
+            "nb": "Pizza"
+        },
         "categories": [1]
     },
     {
         "id": 2,
-        "optionOne": "Wireless keyboard",
-        "optionTwo": "Wireless mouse",
+        "optionOne": {
+            "en": "Wireless keyboard",
+            "nb": "Trådløs tastatur"
+        },
+        "optionTwo": {
+            "en": "Wireless mouse",
+            "nb": "Trådløs mus"
+        },
         "categories": [2]
     },
     {
         "id": 3,
-        "optionOne": "Three arms",
-        "optionTwo": "Three legs",
+        "optionOne": {
+            "en": "Three arms",
+            "nb": "Tre armer"
+        },
+        "optionTwo": {
+            "en": "Three legs",
+            "nb": "Tre ben"
+        },
         "categories": [3]
     },
     {
         "id": 4,
-        "optionOne": "Ice cream",
-        "optionTwo": "Cake",
+        "optionOne": {
+            "en": "Ice cream",
+            "nb": "Iskrem"
+        },
+        "optionTwo": {
+            "en": "Cake",
+            "nb": "Kake"
+        },
         "categories": [1]
     },
     {
         "id": 5,
-        "optionOne": "Get 100 dollars for every lost hour of sleep",
-        "optionTwo": "Get 100 dollars for every good night's sleep",
+        "optionOne": {
+            "en": "Get 100 dollars for every lost hour of sleep",
+            "nb": "Få 100 dollar for hver mistet time med søvn"
+        },
+        "optionTwo": {
+            "en": "Get 100 dollars for every good night's sleep",
+            "nb": "Få 100 dollar for hver god natts søvn"
+        },
         "categories": [3]
     },
     {
         "id": 5,
-        "optionOne": "Have ChatGPT decide everything you eat",
-        "optionTwo": "Have your mother decide everything you eat",
+        "optionOne": {
+            "en": "Have ChatGPT decide everything you eat",
+            "nb": "La ChatGPT bestemme alt du spiser"
+        },
+        "optionTwo": {
+            "en": "Have your mother decide everything you eat",
+            "nb": "La moren din bestemme alt du spiser"
+        },
         "categories": [1, 2]
     }
 ]}

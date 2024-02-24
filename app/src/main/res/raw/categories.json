@@ -1,14 +1,30 @@
 {"categories":[
     {
+        "id": 0,
+        "name": {
+            "en": "All",
+            "nb": "Alle"
+        }
+    },
+    {
         "id": 1,
-        "name": "Food"
+        "name": {
+            "en": "Food",
+            "nb": "Mat"
+        }
     },
     {
         "id": 2,
-        "name": "Technology"
+        "name": {
+            "en": "Technology",
+            "nb": "Teknologi"
+        }
     },
     {
         "id": 3,
-        "name": "Body"
+        "name": {
+            "en": "Body",
+            "nb": "Kropp"
+        }
     }
 ]}

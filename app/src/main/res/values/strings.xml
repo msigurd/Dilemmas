@@ -2,4 +2,5 @@
     <string name="app_name">Dilemmas</string>
     <string name="game">Game</string>
     <string name="back_button">Back</string>
+    <string name="game_or">or</string>
 </resources>

@@ -2,6 +2,7 @@ package com.msigurd.dilemmas.model
 
 import android.content.res.Resources
 import com.msigurd.dilemmas.R
+import com.msigurd.dilemmas.utils.getTranslatedString
 import com.msigurd.dilemmas.utils.readObjectsDataFromJSONFile
 import org.json.JSONArray
 import org.json.JSONException
@@ -16,8 +17,8 @@ data class Dilemma(
     constructor(jsonDilemma: JSONObject) :
         this(
             id = jsonDilemma.optInt("id"),
-            optionOne = jsonDilemma.optString("optionOne"),
-            optionTwo = jsonDilemma.optString("optionTwo"),
+            optionOne = getTranslatedString(jsonDilemma, "optionOne"),
+            optionTwo = getTranslatedString(jsonDilemma, "optionTwo"),
             categories = jsonDilemma.optJSONArray("categories")
         )
 

@@ -2,6 +2,7 @@ package com.msigurd.dilemmas.model
 
 import android.content.res.Resources
 import com.msigurd.dilemmas.R
+import com.msigurd.dilemmas.utils.getTranslatedString
 import com.msigurd.dilemmas.utils.readObjectsDataFromJSONFile
 import org.json.JSONException
 import org.json.JSONObject
@@ -13,7 +14,7 @@ data class Category(
     constructor(jsonCategory: JSONObject) :
         this(
             id = jsonCategory.optInt("id"),
-            name = jsonCategory.optString("name")
+            name = getTranslatedString(jsonCategory, "name")
         )
 
     companion object {

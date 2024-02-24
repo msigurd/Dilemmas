@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dilemmaer</string>
+    <string name="game">Spill</string>
+    <string name="back_button">Tilbake</string>
+    <string name="game_or">eller</string>
+</resources>
