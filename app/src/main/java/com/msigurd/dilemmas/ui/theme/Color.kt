@@ -12,7 +12,7 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
  */
 
-val Black = Color.Black
+val DeepBlue = Color(0xFF11162D)
 val White = Color.White
 val Transparent = Color.Transparent
 
